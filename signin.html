@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Registrarse</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="login-container">
+            <h2>Registro</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required> 
+                </div>
+               <div class="form-group">
+                    <label for="lastname">Apellido:</label>
+                    <input type="text" id="lastname" name="lastname" required>
+               </div> 
+               <div class="form-group">
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="mail" required>
+           </div>
+           <div class="form-group">
+            <label for="birthdate">Fecha de nacimiento:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+        </div>
+        <label for="lang">País</label>
+        <select name="country" id="country">
+          <option value="argentina">Argentina</option>
+          <option value="bolivia">Bolivia</option>
+          <option value="brasil">Brasil</option>
+          <option value="chile">Chile</option>
+          <option value="colombia">Colombia</option>
+          <option value="ecuador">Ecuador</option>
+          <option value="paraguay">Paraguay</option>
+          <option value="peru">Perú</option>
+          <option value="uruguay">Uruguay</option>
+          <option value="venezuela">Venezuela</option>
+        </select>
+        <div class="form-group">
+            <label for="terms">Acepto los términos y condiciones</label>
+            <input type="checkbox" id="terms" name="terms" required>
+        </div>
+            <button type="submit">Registrarse</button>
+            </form>
+        </div>
+    </body>
+</html>
