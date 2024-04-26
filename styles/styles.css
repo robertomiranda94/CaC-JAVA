@@ -23,7 +23,7 @@
 
 .header {
     background-color: var(--color-primario);
-    width: 100VW;
+    width: 100vw;
     box-sizing: border-box;
     height: 10vh;
     min-height: 50px;
@@ -92,7 +92,7 @@ h2 {
     width: 10vw;
     min-width: 20vw;
     height: 10vh;
-    min-height: 50PX;
+    min-height: 50px;
     margin-top: 5vh;
     border: none;
     border-radius: 10px;
@@ -283,4 +283,8 @@ hr {
 .card:hover .views,
 .card:hover .catagory {
     transform: translate(0);
+}
+
+#goBack {
+    color: var(--color-primario);
 }
