@@ -1,0 +1,250 @@
+
+:root {
+    font-size: 16px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+    
+    --texto-blanco: #ffffff;
+    --color-primario: #9f3647;
+    --fondo-negro: #0a0a0a;
+    
+    --gris: #808080;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--fondo-negro);
+    color: var(--texto-blanco);
+}
+
+.header {
+    background-color: var(--color-primario);
+    height: 10vh;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.header_logo {
+    width: 100px;
+    height: auto;
+}
+
+.header_menu a {
+    text-decoration: none;
+    color: var(--texto-blanco);
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.header_menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.main {
+    background-image: linear-gradient(to right top, #4e4b4b8a, #0000008a), url(../image/astro.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: calc(100vh - 10vh);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main h1,
+.main h2 {
+    color: var(--texto-blanco);
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+}
+
+.main button {
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2em;
+    font-weight: 700;
+    background-color: var(--color-primario);
+    color: var(--texto-blanco);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.main button:hover {
+    background-color: #7e2838;
+}
+
+.form-busqueda {
+    background-color: var(--fondo-negro);
+    color: var(--texto-blanco);
+    min-height: calc(50vh - 10vh);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-busqueda h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.form-busqueda form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-busqueda form input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid var(--color-primario);
+    margin-bottom: 10px;
+    color: var(--gris);
+    text-transform: capitalize;
+}
+
+.form-busqueda form button {
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid var(--texto-blanco);
+    background-color: var(--color-primario);
+    color: var(--texto-blanco);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-busqueda form button:hover {
+    background-color: #7e2838;
+}
+
+.card {
+    width: 320px;
+    height: 450px;
+    margin: 50px auto;
+    background: #2a264f;
+    border: 5px solid #1a163f;
+    border-radius: 3px;
+    box-shadow: 0 0 10px #2a264f;
+    overflow: hidden;
+    position: relative;
+}
+
+.card .img1,
+.card .img2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.card .img1 {
+    background-image: url(http://cima4u.tv/wp-content/uploads/1-71.jpg);
+    background-size: cover;
+}
+
+.card .img2 {
+    background-image: url(http://cima4u.tv/wp-content/uploads/1-71.jpg);
+    background-size: cover;
+    transform: rotate(90deg) translate(0, 100%);
+}
+
+.card .title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.card:hover .img1 {
+    transform: scale(1.2);
+}
+
+.card:hover .img2 {
+    transform: rotate(90deg) translate(0, 0);
+}@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    font-size: 16px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--fondo-negro);
+    background-image: url(estrellas.jpg);
+    color: var(--texto-blanco);
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    color: #000;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--color-primario);
+    color: var(--texto-blanco);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #7e2838;
+}
