@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const apiKey = "TMDB_API_KEY";
+    const apiKey = "ef7af66c8e9bf2fa5df79bcf91663cc5";
     const tendenciasContainer = document.getElementById("tendencias-container");
 
     // Función para obtener las tendencias del día
