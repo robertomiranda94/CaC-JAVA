@@ -1,17 +1,20 @@
-//se pide una validacion que no permita avanzar al usuario en caso de que
-//alguno de los dos campos este vacio
-function validarFormulario() {
-    //capturo los elementos
-    const username= document.getElementById('username');
-    const password= document.getElementById('password');
-    //con un condicional evito que los campos queden vacios
-    if (username==="")  {
-        alert("ingresa tu usuario");
-        return false
-    }
-    if (password==="") {
-        alert("ingresa tu contraseña")
-        return false
-    }
-        return true
-     } 
+var username= document.getElementById("username");
+var password= document.getElementById("password");
+var error= document.getElementById("error");
+error.style.color="red";
+
+function enviarFormulario(){
+console.log("enviando formulario");
+  var mensajesError=[];
+  if(username.value==null || username.value=="") { 
+    mensajesError.push("INGRESA TU USUARIO");
+    alert("¡Ingresa tu usuario!");
+     }
+  if(password.value==null || password.value=="") {
+    mensajesError.push("INGRESA TU CONTRASEÑA");
+    alert("¡Ingresa tu contraseña!");
+   
+  }
+  error.innerHTML=mensajesError.join(" , ");
+  return false;
+   }
